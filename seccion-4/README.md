@@ -1,8 +1,9 @@
 ## SECCIÓN 4
 ### Ciclos y Estructuras de Control
 
-* Estructuras de control de flujo
 * Paso de variables por valor y por referencia
+![alt text](https://raw.githubusercontent.com/nwpablodeveloper/FH-JavaScript-Moderno/main/seccion-4/objeto-valor-referencia.jpg?token=GHSAT0AAAAAACGPYZ2ZDZL5NCFXT67MWYBCZIYBDEQ)
+
 * Romper referencia de objetos
 * If y Else
 * Un poco sobre lógica booleana
@@ -15,3 +16,7 @@
 * For
 * For in
 * For of
+
+| archivo | tema |
+|-|-|
+|
