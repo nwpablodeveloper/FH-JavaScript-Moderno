@@ -10,11 +10,11 @@
     // juan.nombre pasa a valer Ana
     // ana.nombre tambien vale Ana
 ```
-[ejemlo ](valor-referencia.js)
+[ ejemlo ](valor-referencia.js)
 ![alt text](objeto-valor-referencia.jpg)
 
 * Romper referencia de objetos
-Usamos el operador REST, que significa que unifique todos los elementos
+Usamos el operador SPREAD, que significa que unifique todos los elementos
 en una sola variable y los transforme como un arreglo nuevo
 ```
     let juan = { nombre: 'Juan' };
@@ -25,8 +25,8 @@ en una sola variable y los transforme como un arreglo nuevo
     // ana.nombre va a valer Ana
 ```
 
-
 * If y Else
+
 * Un poco sobre lógica booleana
 * Operadores y operadores de asignación
 * Operador condicional ternario
