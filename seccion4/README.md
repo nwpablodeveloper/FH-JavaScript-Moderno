@@ -6,6 +6,9 @@
     let juan = { nombre: 'Juan' };
     let ana = juan;
     ana.nombre = 'Ana';
+
+    // juan.nombre pasa a valer Ana
+    // ana.nombre tambien vale Ana
 ```
 [ejemlo ](valor-referencia.js)
 ![alt text](objeto-valor-referencia.jpg)
@@ -17,6 +20,9 @@ en una sola variable y los transforme como un arreglo nuevo
     let juan = { nombre: 'Juan' };
     let ana = { ...juan };
     ana.nombre = 'Ana';
+
+    // juan.nombre sigue valiendo Juan
+    // ana.nombre va a valer Ana
 ```
 
 
