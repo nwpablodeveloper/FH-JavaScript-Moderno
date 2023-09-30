@@ -2,7 +2,7 @@
 ### Ciclos y Estructuras de Control
 
 * Paso de variables por valor y por referencia
-- [GitHub Pages](valor-referencia.js)
+[ejemlo ](valor-referencia.js)
 ![alt text](objeto-valor-referencia.jpg)
 
 * Romper referencia de objetos
