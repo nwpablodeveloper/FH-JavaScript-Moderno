@@ -5,3 +5,5 @@
 * Operadores
 * [Operadores Ternarios](seccion4/operador-ternario.js)
 * Pro Tip
+* Switch
+* While y Do-While

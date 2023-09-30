@@ -82,3 +82,26 @@ en una sola variable y los transforme como un arreglo nuevo
                     nota >= 70 = 'B' : 'F';
 
 ```
+
+* Switch
+```
+    switch( dia ) {
+
+        case 0: 
+            return 'Domingo';
+            breack;
+        case 1: 
+            return 'Lunes';
+            breack;
+        case 2: 
+            return 'Martes';
+            breack;
+        
+        default: 
+            return 'No es Domingo, Lunes o Martes';
+
+    }
+
+```
+
+* While y Do-While
