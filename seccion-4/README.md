@@ -2,7 +2,7 @@
 ### Ciclos y Estructuras de Control
 
 * Paso de variables por valor y por referencia
-![alt text](https://raw.githubusercontent.com/nwpablodeveloper/FH-JavaScript-Moderno/main/seccion-4/objeto-valor-referencia.jpg?token=GHSAT0AAAAAACGPYZ2ZDZL5NCFXT67MWYBCZIYBDEQ)
+![alt text](objeto-valor-referencia.jpg)
 
 * Romper referencia de objetos
 * If y Else
