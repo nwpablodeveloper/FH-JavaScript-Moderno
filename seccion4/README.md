@@ -57,4 +57,4 @@ en una sola variable y los transforme como un arreglo nuevo
 | AND | && | true &&  false | false |Todas las condiciones tiene que ser True |
 | AND | && | false &&  true | false |Todas las condiciones tiene que ser True |
 | AND | && | false &&  false | false |Todas las condiciones tiene que ser True |
-| OR | \||\ | true \||\ false | true | se tiene que cumplir al menos 1 condiciones para devolver true |
+| OR | \|\| | true \|\| false | true | se tiene que cumplir al menos 1 condiciones para devolver true |
