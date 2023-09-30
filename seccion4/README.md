@@ -50,7 +50,8 @@ en una sola variable y los transforme como un arreglo nuevo
 ```
 
 * Operadores
-Operador| Uso | Ejemplo | respuesta | Descripción |
+
+| Operador| Uso | Ejemplo | respuesta | Descripción |
 |-|-|-|-|-|
 | AND | && | true &&  true | true |Todas las condiciones tiene que ser True |
 | AND | && | true &&  false | false |Todas las condiciones tiene que ser True |
