@@ -25,20 +25,35 @@ en una sola variable y los transforme como un arreglo nuevo
     // ana.nombre va a valer Ana
 ```
 
-* If y Else
+* If y Else ( Estructuras de control )
+```
+    if ( 10 > 20 ) { // si la condición se cumple
+        console.log('10 no es mayor a 20');
+    } else if ( 10 > 30 ) { // si la primer condicion no se cumple pasamos a la 2da
+        console.log('10 no es mayor a 30');
+    } else { // si no se cumple ninguna condicion ejecutamos el ultimo ELSE
+        console.log('10 no es mayor ni a la 1er condicion ni a la 2da');
+    }   
+```
+* [Sin usar if else o swtich, solo usar objetos para imprimir cada dia de la semana](laboratorio.js)
 
-* Un poco sobre lógica booleana
-* Operadores y operadores de asignación
-* Operador condicional ternario
-* Diferentes usos del operador condicional ternario
-* Switch
-* While
-* Do While
-* For
-* For in
-* For of
+* Lógica Booleana
 
-| archivo | tema |
-|-|-|
-|
+```
+    // booleana
+    console.log( true );
+    console.log( false );
 
+    // Negación booleana
+    console.log( !true ); // devuelve False
+    console.log( !false ); // devuelve True
+```
+
+* Operadores
+Operador| Uso | Ejemplo | respuesta | Descripción |
+|-|-|-|-|-|
+| AND | && | true &&  true | true |Todas las condiciones tiene que ser True |
+| AND | && | true &&  false | false |Todas las condiciones tiene que ser True |
+| AND | && | false &&  true | false |Todas las condiciones tiene que ser True |
+| AND | && | false &&  false | false |Todas las condiciones tiene que ser True |
+| OR | \||\ | true \||\ false | true | se tiene que cumplir al menos 1 condiciones para devolver true |
