@@ -53,8 +53,32 @@ en una sola variable y los transforme como un arreglo nuevo
 
 | Operador| Uso | Ejemplo | respuesta | Descripción |
 |-|-|-|-|-|
-| AND | && | true &&  true | true |Todas las condiciones tiene que ser True |
-| AND | && | true &&  false | false |Todas las condiciones tiene que ser True |
-| AND | && | false &&  true | false |Todas las condiciones tiene que ser True |
-| AND | && | false &&  false | false |Todas las condiciones tiene que ser True |
+| AND | && | true && true | true |Todas las condiciones tiene que ser True |
+| AND | && | true && false | false |Todas las condiciones tiene que ser True |
+| AND | && | false && true | false |Todas las condiciones tiene que ser True |
+| AND | && | false && false | false |Todas las condiciones tiene que ser True |
+| AND | && | ( true && true ) && ( true && false )| true y false | se ejecutan las 2 condiciones y leug se comparan|
+| OR | \|\| | true \|\| true | true | se tiene que cumplir al menos 1 condiciones para devolver true |
 | OR | \|\| | true \|\| false | true | se tiene que cumplir al menos 1 condiciones para devolver true |
+| OR | \|\| | false \|\| false | false | se tiene que cumplir al menos 1 condiciones para devolver true |
+| OR | \|\| | false \|\| true | true | se tiene que cumplir al menos 1 condiciones para devolver true |
+
+* [Operadores Ternarios](./operador-ternario.js)
+```  
+    const diaUsuario = 0;
+    const horaUsuario = 8;
+
+    horaApertura = ( [0,6].includes( diaUsuario ) ) ? 9 : 11;
+    mensaje = ( horaUsuario >= horaApertura ) ? 'Esta Abiertno' : 'Esta Cerrado';
+
+    console.log({ horaApertura, mensaje });
+```
+* Pro Tip
+```
+    const puntos = 80;
+    const nota =    nota >= 95 ? 'A+':
+                    nota >= 80 ? 'A' :
+                    nota >= 75 = 'B+' :
+                    nota >= 70 = 'B' : 'F';
+
+```
