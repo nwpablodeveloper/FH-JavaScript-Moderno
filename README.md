@@ -6,4 +6,5 @@
 * [Operadores Ternarios](seccion4/operador-ternario.js)
 * Pro Tip
 * Switch
-* While y Do-While
+* [While y Do-While](./seccion4/while.js)
+* [For - For In - For of](./seccion4/ciclos.js)

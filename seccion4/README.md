@@ -104,4 +104,31 @@ en una sola variable y los transforme como un arreglo nuevo
 
 ```
 
-* While y Do-While
+* [While y Do-While](./while.js)
+```
+    while( true ){
+        // ...ejecuta este codigo
+    }
+```
+```
+    do{
+        // ...el codigo se ejecuta al menos 1 primer ves
+    } while ( true )
+```
+
+* [For - For In - For Of](./ciclos.js)
+```
+    const pc = [ 'Mohter', 'Micro', 'Ram', 'HHD', 'SSD', 'Refrigeración', 'Fuente' ];
+
+    for (let i = 0; i < pc.length; i++) {        
+        console.log( pc[i] );        
+    }
+
+    for ( let i in pc ) {        
+        console.log( i );            
+    }
+
+    for ( let componente of pc ) {
+        console.log( componente );    
+    }
+```
