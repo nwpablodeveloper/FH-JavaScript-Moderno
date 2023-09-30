@@ -1,2 +1,3 @@
-## SECCION 4
-### [ Los objetos y arreglos son pasados por referencia ](seccion4)
+## [ SECCION 4 ]( seccion4 ) 
+* Valor, refereica y rompoer refereica
+* if y Else
