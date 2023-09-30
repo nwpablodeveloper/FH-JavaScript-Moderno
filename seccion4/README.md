@@ -2,10 +2,22 @@
 ### Ciclos y Estructuras de Control
 
 * Paso de variables por valor y por referencia
+```
+    let juan = { nombre: 'Juan' };
+    let ana = juan;
+    ana.nombre = 'Ana';
+```
 [ejemlo ](valor-referencia.js)
 ![alt text](objeto-valor-referencia.jpg)
 
 * Romper referencia de objetos
+Usamos el operador REST, que significa que unifique todos los elementos
+en una sola variable y los transforme como un arreglo nuevo
+```
+    let juan = { nombre: 'Juan' };
+    let ana = { ...juan };
+    ana.nombre = 'Ana';
+```
 
 
 * If y Else
@@ -23,3 +35,4 @@
 | archivo | tema |
 |-|-|
 |
+
