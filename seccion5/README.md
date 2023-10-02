@@ -3,20 +3,20 @@
 * Pedir carta
 * DOM y su manipulación
   1. ducument 
-```
+```javscript
     document.querySelector('body');
     document.querySelector('body').innerText = 'Aca Texto';
     document.querySelector('body').innerHTML = '<b>Hola mundo</b>';
 ```
  2. Al guardar el pedazo de DOM en una variable siempre vamos a tener acceso de forma referencial y asi manipular todas sus propiedades
 
-```
+```javscript
     const diBotones = document.querySelectero('#divBotones');
     divBotones.append('button')
 ```
  3. Crear elementos y manipular sus atributos
 
-```
+```javscript
     // guardamos el modulo donde vamos a agregar un elemento en una variable.
     const elementoConId = decumento.querySelector('divBotones');
 

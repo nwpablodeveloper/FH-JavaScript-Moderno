@@ -2,7 +2,7 @@
 ### Ciclos y Estructuras de Control
 
 * Paso de variables por valor y por referencia
-```
+```javscript
     let juan = { nombre: 'Juan' };
     let ana = juan;
     ana.nombre = 'Ana';
@@ -16,7 +16,7 @@
 * Romper referencia de objetos
 Usamos el operador SPREAD, que significa que unifique todos los elementos
 en una sola variable y los transforme como un arreglo nuevo
-```
+```javscript
     let juan = { nombre: 'Juan' };
     let ana = { ...juan };
     ana.nombre = 'Ana';
@@ -26,7 +26,7 @@ en una sola variable y los transforme como un arreglo nuevo
 ```
 
 * If y Else ( Estructuras de control )
-```
+```javscript
     if ( 10 > 20 ) { // si la condición se cumple
         console.log('10 no es mayor a 20');
     } else if ( 10 > 30 ) { // si la primer condicion no se cumple pasamos a la 2da
@@ -39,7 +39,7 @@ en una sola variable y los transforme como un arreglo nuevo
 
 * Lógica Booleana
 
-```
+```javscript
     // booleana
     console.log( true );
     console.log( false );
@@ -64,7 +64,7 @@ en una sola variable y los transforme como un arreglo nuevo
 | OR | \|\| | false \|\| true | true | se tiene que cumplir al menos 1 condiciones para devolver true |
 
 * [Operadores Ternarios](./operador-ternario.js)
-```  
+```javscript 
     const diaUsuario = 0;
     const horaUsuario = 8;
 
@@ -74,7 +74,7 @@ en una sola variable y los transforme como un arreglo nuevo
     console.log({ horaApertura, mensaje });
 ```
 * Pro Tip
-```
+```javscript
     const puntos = 80;
     const nota =    nota >= 95 ? 'A+':
                     nota >= 80 ? 'A' :
@@ -84,7 +84,7 @@ en una sola variable y los transforme como un arreglo nuevo
 ```
 
 * Switch
-```
+```javscript
     switch( dia ) {
 
         case 0: 
@@ -105,19 +105,19 @@ en una sola variable y los transforme como un arreglo nuevo
 ```
 
 * [While y Do-While](./while.js)
-```
+```javscript
     while( true ){
         // ...ejecuta este codigo
     }
 ```
-```
+```javscript
     do{
         // ...el codigo se ejecuta al menos 1 primer ves
     } while ( true )
 ```
 
 * [For - For In - For Of](./ciclos.js)
-```
+```javscript
     const pc = [ 'Mohter', 'Micro', 'Ram', 'HHD', 'SSD', 'Refrigeración', 'Fuente' ];
 
     for (let i = 0; i < pc.length; i++) {        
