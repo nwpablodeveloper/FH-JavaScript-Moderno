@@ -34,14 +34,29 @@ const tiposDeck = ( cart ) => {
 
 const pedirCarta = () => {
 
-    const carta = deck[ deck.length - 1 ];
-    deck.length = deck.length - 1;
+    if ( deck.length === 0 ) {
+        throw 'No hay cartas en el deck'
+    }
+
     console.info(deck);
+    const carta = deck.pop();
 
     return carta;
 
 }
 
+const valorCarta = ( carta ) => {
+
+    const valor = carta.substring( 0, carta.length - 1 );
+
+    return ( !isNaN( valor ) ) ? valor * 1 :
+                valor === 'A'  ? 11 : 10;
+
+}
+
 
 crearDeck(); // Crear maso de cartas y mezclar con underscor.js ( _.shuffle )
-console.log(pedirCarta())
+
+
+const valor = valorCarta( pedirCarta() );
+console.log(valor);
