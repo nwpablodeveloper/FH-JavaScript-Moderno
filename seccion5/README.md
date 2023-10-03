@@ -2,7 +2,9 @@
 * Crear maso de cartas y mezclar
 * Pedir carta
 * DOM y su manipulación
+  
   1. ducument 
+
 ```js
     document.querySelector('body');
     document.querySelector('body').innerText = 'Aca Texto';
@@ -33,3 +35,5 @@
     botonNuevo.classList.add('btn-danger');
 
 ```
+
+* Eventos ( Escuchar )

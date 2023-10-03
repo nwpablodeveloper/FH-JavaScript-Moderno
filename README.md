@@ -14,3 +14,4 @@
 * Crear maso de cartas
 * Pedir carta
 * DOM y su maninpulación
+* Eventos ( Escuchar )
