@@ -11,12 +11,14 @@ const especiales = [ 'A' , 'J', 'Q', 'K' ];
 let puntosJugador = 0;
 let puntosComputadora = 0;
 
-    // Guardamos todo el modulo en una variable para luego modificar sus atributos haciendo uso de su referencia
+// Guardamos todo el modulo en una variable para luego modificar sus atributos haciendo uso de su referencia
 const divJugadorCartas = document.querySelector('#jugador-cartas');
 const divCartasComputadora = document.querySelector('#computadora-cartas')
+
 const btnPedir = document.querySelector('#btnPedir');
 const btnNuevo = document.querySelector('#btnNuevo');
 const btnDetener = document.querySelector('#btnDetener');
+
 const puntosHTML = document.querySelectorAll('small');    
 
 
@@ -31,7 +33,6 @@ const crearDeck = () => {
     }
     
     deck = _.shuffle( deck );
-    console.warn( deck ) ;
 
 }
 
@@ -89,6 +90,14 @@ const turnoComputadora = ( puntosMinimos ) => {
         
     } while ( ( puntosComputadora <= puntosMinimos ) && ( puntosMinimos <=21 ) );
 
+    setTimeout(() => {
+        
+        
+        ( puntosComputadora > 21 ) ? alert('Ganaste') :
+        puntosMinimos > 21 ? alert('Perdiste') :  
+        puntosComputadora > puntosMinimos && puntosComputadora <=21 ? alert('Perdiste') : alert( 'Empate' )
+        
+    }, 10);
 }
 
 
@@ -124,6 +133,10 @@ btnPedir.addEventListener( 'click', () =>  {
 
 btnNuevo.addEventListener( 'click', () =>  {
 
+    deck = [];
+    crearDeck();
+    puntosHTML[0].innerText = 0;
+    puntosHTML[1].innerText = 0;
     divCartasComputadora.innerText = '';
     divJugadorCartas.innerText = '';
     btnPedir.disabled = false;
