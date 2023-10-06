@@ -10,8 +10,14 @@
 * [For - For In - For of](./seccion4/ciclos.js)
 
 ## [ SECCION 5]( ./seccion5/ )
-### Blackjack App
+
+## [ SECCIÓN 6 ]( ./seccion6/ )
+### Blackjack App 
 * Crear maso de cartas
 * Pedir carta
 * DOM y su maninpulación
 * Eventos ( Escuchar )
+* Proteger el codigo
+* Enviar funciones de forma pública
+* Hacer referencia y ejecutar una función
+* Comprimir codigo JS [ LINK ]( https://www.toptal.com/developers/javascript-minifier )
