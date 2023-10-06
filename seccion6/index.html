@@ -28,7 +28,7 @@
         <div class="col">
 
             <h1>Pablo Veiga - Puntos: <small>0</small> </h1>
-            <div id="jugador-cartas">
+            <div id="jugador-cartas" class="divCartas">
                 <!-- <img class="carta" src="assets/cartas/7C.png" > -->
             </div>
 
@@ -39,7 +39,7 @@
         <div class="col">
 
             <h1>Computadora Puntos: <small>0</small> </h1>
-            <div id="computadora-cartas">
+            <div id="computadora-cartas" class="divCartas">
                 <!-- <img class="carta" src="assets/cartas/4C.png" > -->
             </div>
 
@@ -48,5 +48,21 @@
     
     <script src="./assets/js/underscore-min.js" ></script>
     <script src="./assets/js/juego.js"></script>
+
+    <script>
+
+        setTimeout(() => {
+            
+            miModulo.nuevoJuego()
+            
+        }, 100);
+
+        document.querySelector('#btnNuevo').addEventListener('click', () => {
+
+            
+        })
+
+    </script>
+
 </body>
 </html>
