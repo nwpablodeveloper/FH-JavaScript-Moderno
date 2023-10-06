@@ -10,7 +10,7 @@
 * [While y Do-While](./seccion4/while.js)
 * [For - For In - For of](./seccion4/ciclos.js)
 
-## [ SECCION 5]( ./seccion5/ )
+## [ SECCIÓN 5]( ./seccion5/ )
 ### Inciando creación de BlackJack
 * Crear maso de cartas y mezclar
 * Pedir carta
