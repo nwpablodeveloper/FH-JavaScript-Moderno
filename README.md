@@ -1,4 +1,5 @@
 ## [ SECCION 4 ]( ./seccion4 ) 
+### Operadores y flujo de datos
 * Valor, refereica y rompoer refereica
 * if y Else
 * Lógica Booleana
@@ -10,7 +11,7 @@
 * [For - For In - For of](./seccion4/ciclos.js)
 
 ## [ SECCION 5]( ./seccion5/ )
-## Inciando creación de BlackJack
+### Inciando creación de BlackJack
 * Crear maso de cartas y mezclar
 * Pedir carta
 * DOM y su manipulación
@@ -19,10 +20,6 @@
 
 ## [ SECCIÓN 6 ]( ./seccion6/ )
 ### Blackjack App 
-* Crear maso de cartas
-* Pedir carta
-* DOM y su maninpulación
-* Eventos ( Escuchar )
 * Proteger el codigo
 * Enviar funciones de forma pública
 * Hacer referencia y ejecutar una función
