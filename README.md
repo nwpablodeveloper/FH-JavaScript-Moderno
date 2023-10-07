@@ -30,3 +30,5 @@
 * Clases básicas en JS
 * Metodos dentro de la clase
 * Sets y Gets
+* Propiedades, Gets, Sets Estáticos
+* Extención de Clases
