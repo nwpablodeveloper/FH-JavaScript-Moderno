@@ -24,3 +24,9 @@
 * Enviar funciones de forma pública
 * Hacer referencia y ejecutar una función
 * Comprimir codigo JS [ LINK ]( https://www.toptal.com/developers/javascript-minifier )
+
+## [ SECCIÓN 7 ]( ./seccion7/ )
+### Clases y ESNext propiedades privadas
+* Clases básicas en JS
+* Metodos dentro de la clase
+* Sets y Gets
