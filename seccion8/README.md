@@ -22,4 +22,7 @@
    - [ ] TypeScript
    - [x] JavaScript o Vanilla
 
-3. 
+3. Entrar al directorio creado y ejecutar lo sig.:
+    - cd nompbreCreado
+    - npm install
+    - npm run dev  
