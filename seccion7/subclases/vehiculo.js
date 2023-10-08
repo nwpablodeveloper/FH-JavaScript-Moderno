@@ -6,13 +6,13 @@ console.log('')
 class Vehiculo {
 
     marca;
-    tipo;
+    #tipo;
     color;
 
     constructor( marca = 'Vacio', tipo = 'Vacio', color = 'Vacio') {
 
         this.marca = marca;
-        this.tipo = tipo;
+        this.#tipo = tipo;
         this.color = color;
 
     }

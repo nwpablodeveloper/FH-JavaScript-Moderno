@@ -34,3 +34,5 @@
 * Sets y Gets
 * Propiedades, Gets, Sets Estáticos
 * Extención de Clases
+* Singleton ( Instancia única de la clase )
+* Multiples constructores

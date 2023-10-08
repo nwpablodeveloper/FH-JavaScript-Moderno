@@ -147,7 +147,7 @@ class Vehiculo {
 
 const familiar = new Vehiculo(); // Intanciamos un Vehiculo
 
-familiar.tipo = 'Auto';     // cargamos sus propiedades
+familiar.tipo = 'Rural';     // cargamos sus propiedades
 familiar.marca = 'Fiat';    // cargamos sus propiedades
 familiar.color = 'Blanco';  // cargamos sus propiedades
 
@@ -175,11 +175,89 @@ const avion = new TransportePublico(); // Creamos la instancia de la sub-clase
 
 avion.color = 'Rojo';   // Cargamos las propiedades en comun con la clase padre
 avion.marca = 'Boing';  // Cargamos las propiedades en comun con la clase padre
-avion.tipo = 'Avion';   // Cargamos las propiedades en comun con la clase padre
+avion.tipo = '777';   // Cargamos las propiedades en comun con la clase padre
 
 avion.ruta = 'Aereo'    // Cargamos la propiedad que la diferencia de la clase padre
 
 console.log(avion)
 avion.utilidad( `Llevar muchos pasajeros` ); // 
+
+```
+
+* [ Singleton ]( ./singleton/singleton.js )
+> [ El singleton es una instancia unica de mi clase ]( ./singleton/singleton.js )
+
+```js
+    // DOBLE NEGACIÓN !!
+    const a = undefined; 
+    console.log( a ); //    undefined
+    console.log( !a ); //   true
+    console.log( !!a ); //  false
+```
+```js
+
+
+class Singleton {
+    
+    // Esto es opcional ponerlo
+    static instancia;  // Esta va a ser la instancia inicializada de mi clase
+    nombre = '';
+
+    constructor( nombre = 'Sin nombre' ) {
+
+        if ( !!Singleton.instancia ) {
+            return Singleton.instancia;
+        }
+
+        Singleton.instancia = this; // this hace referencia a toda la instancia
+        this.nombre = nombre;
+
+        // no es necesario hacer un return en el constructor por que siempre retorna la instancia
+        // return this
+
+    }
+
+}
+
+const instancia1 = new Singleton('Sophi');
+const instancia2 = new Singleton('Pablo');
+const instancia3 = new Singleton('Pablo');
+console.log(`El nombre en la instancia1 es: ${ instancia1.nombre }`)
+console.log(`El nombre en la instancia2 es: ${ instancia2.nombre }`)
+console.log(`El nombre en la instancia3 es: ${ instancia3.nombre }`)
+
+```
+* Multiples Constructores
+```js
+class Persona {
+
+    static porObjeto( obj ) {
+        return new Persona( obj.nombre, obj.apellido )
+    }
+    
+    constructor( nombre, apellido, edad, pais, viveEn ) {
+
+        this.nombre     = nombre;
+        this.apellido     = apellido;
+    }
+
+    mostrarDatos() {
+        console.log(`${ this.nombre } ${ this.apellido } `)
+    }
+}
+
+const   nombre      = 'Pablo',
+        apellido    = 'Veiga',
+
+const sophi = {
+    nombre:     'Sophia',
+    apellido:   'Veiga',
+}
+
+const persona1 = new Persona( nombre, apellido );
+const persona2 = Pesrona.porObjeto( sophi );
+
+persona1.mostrarDatos();
+persona2.mostrarDatos();
 
 ```

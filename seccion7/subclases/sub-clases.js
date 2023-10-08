@@ -14,6 +14,7 @@ class Persona {
     codigo;
     frase;
     comida = '';
+    
 
     constructor( nombre = 'Sin nombre', codigo = 'Sin codigo', frase = 'Sin frase') {
 
