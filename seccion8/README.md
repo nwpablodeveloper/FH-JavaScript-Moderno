@@ -20,7 +20,6 @@ Cuando modificamos un archivos, VITE Hace el cambi modulo en caliente
 
 #### INSTALACIÓN 
     npm install vite
-    npm create vite
 
 2. Vanilla ( Es trabajar con JS sin ningu Framework )
    - [ ] TypeScript
