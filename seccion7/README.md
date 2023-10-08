@@ -1,7 +1,7 @@
 ## SECCIÓN 7
 ### Clases y ESNext propiedades privadas
 * [Clases básicas en JS]( ./clases/clases.js )
-> [ Las clases son plantillas para crear objetos ]( ./clases/clases.js )
+> Las clases son plantillas para crear objetos
 ```js
 
 // Declaramos las clase
@@ -32,7 +32,7 @@ console.log(spiderman);
 console.log(ironman);
 ```
 * [ Metodos dentro de la clase ]( ./clases/clases.js )
-> [ Los metodos son funciones dentro de la clase ]( ./clases/clases.js )
+> Los metodos son funciones dentro de la clase
 ```js
     class Persona {
 
@@ -92,7 +92,7 @@ console.log(ironman);
 
 ```
 * [ Propiedades, gets y metodos estáticos ](./subclases/vehiculo.js)
-> [ Nos permite la utilización de metodos y propiedades sin necesidad de instanciar la clase ](./subclases/vehiculo.js)
+> Nos permite la utilización de metodos y propiedades sin necesidad de instanciar la clase
 ```js
     class Vehiculo {
         
@@ -120,7 +120,7 @@ console.log(ironman);
 
 ```
 * [ Extends Clases y SubClases ]( ./subclases/sub-clases.js )
-> [ Heredamos todas las propiedades de la clase padre. ]( ./subclases/sub-clases.js )
+> Heredamos todas las propiedades de la clase padre.
 ```js
 
 
@@ -185,7 +185,7 @@ avion.utilidad( `Llevar muchos pasajeros` ); //
 ```
 
 * [ Singleton ]( ./singleton/singleton.js )
-> [ El singleton es una instancia unica de mi clase ]( ./singleton/singleton.js )
+> El singleton es una instancia unica de mi clase
 
 ```js
     // DOBLE NEGACIÓN !!
