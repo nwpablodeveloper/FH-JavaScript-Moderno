@@ -23,6 +23,8 @@
    - [x] JavaScript o Vanilla
 
 3. Entrar al directorio creado y ejecutar lo sig.:
-    - cd nompbreCreado
-    - npm install
-    - npm run dev  
+4.  - cd directorio
+5. - npm install
+6. - npm run dev  
+
+7. 
