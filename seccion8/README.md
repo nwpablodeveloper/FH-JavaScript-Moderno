@@ -20,15 +20,16 @@ Cuando modificamos un archivos, VITE Hace el cambi modulo en caliente
 
 #### INSTALACIÓN 
     npm install vite
+    npm create vite
 
 2. Vanilla ( Es trabajar con JS sin ningu Framework )
    - [ ] TypeScript
    - [x] JavaScript o Vanilla
 
-3. Entrar al directorio creado y ejecutar lo sig.:
-    - cd directorio
-    - npm install
-    - npm run dev  
+3. Ejecutar lo sig.:
+    1. cd directorio
+    2. npm install
+    3. npm run dev  
 
 4. Vamos a http://localhost:5173 ( en este caso nos asigno el puerto 5173 )
     - Listo ya podemos ver la App en tiempo real
