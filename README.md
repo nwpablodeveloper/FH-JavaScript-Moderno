@@ -41,3 +41,4 @@
 * Bundlers
 * Webpack
 * Vite
+* dependencias vs devDependencias
