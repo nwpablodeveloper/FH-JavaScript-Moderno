@@ -41,4 +41,7 @@
 * Bundlers
 * Webpack
 * Vite
+* package.json
 * dependencias vs devDependencias
+* build de producción
+* Importación de modulos
