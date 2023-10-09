@@ -45,7 +45,7 @@ Los Assets que son los elemnentos estaticos de la app tienen que ir dentro
 de una carpeta llamada public
     ```./public/assets```
 
-### EXPORTACIÓN DE MODULOS
+### EXPORTACIÓN DE MODULOS dfdfdf
     
 1. moudulo-externo.js
    + Ejemplo de exportación 1
