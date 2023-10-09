@@ -50,4 +50,10 @@
 * jsdoc 
 
 ## [ SECCIÓN 9 GIT BÁSICO ]( ./seccion9/ )
-* 
+* Instalación
+* Configuración de github
+* .gitignore
+* README.md
+* vite.config.js
+* github PAGES
+* 12 Comandos que necesitas saber de github

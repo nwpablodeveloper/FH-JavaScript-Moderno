@@ -26,12 +26,14 @@
         cambio de deploy,
      */
     export default defineConfig({
-        base '/'
+        base '/nombreDeRepositorioDondeEstaLaCarpetaDocs/'
     });
 ```
+6. Hacer el npm run build
+7. renombrar la carpeta dist por DOCS
+8. Dejar la carpeta DOCS en la raiz del repositorio
 
+7. Mi App blackjack ya esta lista en gitgub-pages
 
-
-6. Desplegar el proyecto como una web en "github pages"
-    * Renombrar la carpeta "dist" por "docs"
+## [ 12 comandos de github que tenes que saber ](https://www.youtube.com/watch?v=iT4UOkyI09k)
 
