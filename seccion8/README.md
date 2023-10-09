@@ -11,12 +11,12 @@ producción, eso es lo que hace básicamente un Bundlers
 Cuando trabajamos en una aplicación con muchos modulos o archivos
 y modificamos alguno, WEBPACK vuelve a cargar todos esos modulos y los 
 vuelve a generar en el Build, haciendo asi que el estado de la App
-se perdia y se volvia a montar
+se pierda y se vuelva a montar
 
 
-### VITE
+### VITE APP
 
-Cuando modificamos un archivos, VITE Hace el cambi modulo en caliente
+Cuando modificamos un archivos, VITE Hace el cambio en el modulo en caliente
 
 ### VITE INSTALACIÓN 
     npm install vite
@@ -44,3 +44,69 @@ Cuando modificamos un archivos, VITE Hace el cambi modulo en caliente
 Los Assets que son los elemnentos estaticos de la app tienen que ir dentro
 de una carpeta llamada public
     ```./public/assets```
+
+### EXPORTACIÓN DE MODULOS
+    
+1. moudulo-externo.js
+   + Ejemplo de exportación 1
+
+```js
+
+export const miFuncion = () => {
+
+    // CODIGO DE MI FUNCIÓN
+
+}
+
+```
+2. moudulo-externo.js
+   + Ejemplo de exportación 2
+
+```js
+
+const miFuncion = () => {
+
+    // CODIGO DE MI FUNCIÓN
+
+}
+
+export default miFuncion;
+
+
+```
+
+### IMPORTACIÓN DE MODULOS
+
+1. archivos.js
+   + Ejemplo de importación 1
+```js
+
+    import './src/modulo-externo';
+
+    // la extención js no es necesaria ponerla
+
+```
+
+2. archivos.js
+   + Ejemplo de importación 2
+```js
+
+    import miPaquete from './src/modulo-externo';
+
+```
+
+3. archivos.js
+   + Ejemplo de importación 3 ( Desesctructurando )
+
+```js
+
+    import { miFuncion } from './src/modulo-externo';
+
+```
+### CAMBIAR EL NOMBRE AL MODULO IMPORTADO
+```js
+
+    import { miFuncion as nombreCambiado } from './src/modulo-externo';
+
+```
+

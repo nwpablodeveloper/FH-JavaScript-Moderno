@@ -44,4 +44,6 @@
 * package.json
 * dependencias vs devDependencias
 * build de producción
+* Exportación de modulos
 * Importación de modulos
+* Cambiar el nombre al modulo importado
