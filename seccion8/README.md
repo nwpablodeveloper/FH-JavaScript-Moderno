@@ -110,3 +110,26 @@ export default miFuncion;
 
 ```
 
+### JSDOC
+jsDocs es la forma en la que documentamos y comentamos nuestro codigo, es de 
+suma importación aclarar con documentación la funcionalidad de nuestro codigo
+para que otros desarrolladores lo pueda leer con facilidad...y el mismo
+desarrollador en un futuro.
+```js
+    Al poner lo siguiente se generea automaticamente con la extención de VS Better Comments
+    /**    
+
+```
+```js
+/**
+ * 
+ * @param {Array<string>} dato1 
+ * @param {Array<string>} dato2 
+ * @returns {Array<string>}
+ */
+export const crearDeck = ( dato1, dato2 ) => {
+    // CODIGO DE LA FUNCIÓN
+}
+
+```
+
