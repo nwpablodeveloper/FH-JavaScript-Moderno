@@ -1,6 +1,6 @@
 ## SECCIÓN 7
 ### Clases y ESNext propiedades privadas
-* [Clases básicas en JS]( ./clases/clases.js )
+### [ CLASES BÁSICAS DE JS ]( ./clases/clases.js )
 > Las clases son plantillas para crear objetos
 ```js
 
@@ -31,7 +31,7 @@ const ironman = new Persona( 'Tony Stark', 'Ironman', 'Yo soy Ironman' )
 console.log(spiderman);
 console.log(ironman);
 ```
-* [ Metodos dentro de la clase ]( ./clases/clases.js )
+### [ METODOS DENTRO DE LA CLASE ]( ./clases/clases.js )
 > Los metodos son funciones dentro de la clase
 ```js
     class Persona {
@@ -47,7 +47,7 @@ console.log(ironman);
 
     }
 ```
-* Sets
+### SETS
 > Los SETS son para cargar valores a las propiedades de la clase
 ```js
     class Vehiculo {
@@ -66,7 +66,7 @@ console.log(ironman);
     const autoPablo = new Vehiculo();
     autoPablo.setCargarColor = 'Blanco';
 ```
-* Get
+### GETS
 > Los GET son para recuperar el valor
 ```js
     class Vehiculo {
@@ -91,7 +91,7 @@ console.log(ironman);
     console.log(autoPablo.getColorAuto)
 
 ```
-* [ Propiedades, gets y metodos estáticos ](./subclases/vehiculo.js)
+### [PROPIEDADES, GETS Y MÉTODOS ESTÁTICOS ](./subclases/vehiculo.js)
 > Nos permite la utilización de metodos y propiedades sin necesidad de instanciar la clase
 ```js
     class Vehiculo {
@@ -119,7 +119,7 @@ console.log(ironman);
     Vehiculo.mensaje(); // haciendo uso de los metodos estaticos
 
 ```
-* [ Extends Clases y SubClases ]( ./subclases/sub-clases.js )
+### [ EXTENCIÓN DE CLASES, SUBCLASES ]( ./subclases/sub-clases.js )
 > Heredamos todas las propiedades de la clase padre.
 ```js
 
@@ -184,7 +184,7 @@ avion.utilidad( `Llevar muchos pasajeros` ); //
 
 ```
 
-* [ Singleton ]( ./singleton/singleton.js )
+### [ SINGLETON ]( ./singleton/singleton.js )
 > El singleton es una instancia unica de mi clase
 
 ```js
@@ -227,7 +227,7 @@ console.log(`El nombre en la instancia2 es: ${ instancia2.nombre }`)
 console.log(`El nombre en la instancia3 es: ${ instancia3.nombre }`)
 
 ```
-* Multiples Constructores
+### MULTIPLES CONSTRUCTORES
 ```js
 class Persona {
 
