@@ -26,9 +26,9 @@ Cuando modificamos un archivos, VITE Hace el cambio en el modulo en caliente
    - [x] JavaScript o Vanilla
 
 3. Ejecutar lo sig.:
-    1. cd directorio
-    2. npm install
-    3. npm run dev  
+    - cd directorio
+    - npm install
+    - npm run dev
 
 4. Vamos a http://localhost:5173 ( en este caso nos asigno el puerto 5173 )
     - Ya podemos ver la App y sus modificaciones en tiempo real
