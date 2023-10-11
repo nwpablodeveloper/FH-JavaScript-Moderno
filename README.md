@@ -22,7 +22,7 @@
 
 ## [ SECCIÓN 6 ]( ./seccion6/ )
 ### Blackjack App 
-* Proteger el codigo
+* Proteger el codigo ( FUNCIÓN AUTOINVOCADA )
 * Enviar funciones de forma pública
 * Hacer referencia y ejecutar una función
 * Comprimir codigo JS [ LINK ]( https://www.toptal.com/developers/javascript-minifier )
@@ -57,3 +57,5 @@
 * vite.config.js
 * github PAGES
 * 12 Comandos que necesitas saber de github
+
+## [ SECCIÓN 10 ]( ./seccion10/ )

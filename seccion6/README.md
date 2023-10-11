@@ -1,5 +1,5 @@
-* Patron modúlo ( Encapsulamiento para que el usuario no pueda manipular el codigo )
-
+## Patron modúlo ( Encapsulamiento para que el usuario no pueda manipular el codigo )
+### FUNCIÓN AUTOINVOCADA
 ```js
 
     ( () => {
@@ -7,11 +7,11 @@
         TODO aca va el codigo y queda encapsulado y de forma privada,
         con esto el usuario no puede modificar datos */
 
-    } () )
+    }) ();
 
 ```
 
-* Enviar funciones de forma pública
+## Enviar funciones de forma pública
 
 ```js
 
@@ -29,7 +29,7 @@
 
 ```
 
-* Hacer referencia y ejecutar una función
+## Hacer referencia y ejecutar una función
 ```js
 
         const creaciónDeLaFuncion = () => {
