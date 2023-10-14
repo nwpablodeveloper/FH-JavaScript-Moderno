@@ -58,4 +58,5 @@
 * github PAGES
 * 12 Comandos que necesitas saber de github
 
-## [ SECCIÓN 10 ]( ./seccion10/ )
+## [ SECCIÓN 10 ( Lista de tareas App ) ]( ./seccion10/ )
+* Local Storage / Sesion Storage
