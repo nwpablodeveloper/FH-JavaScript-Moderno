@@ -21,16 +21,30 @@ Cuando modificamos un archivos, VITE Hace el cambio en el modulo en caliente
 ### VITE INSTALACIÓN 
     npm install vite
 
-2. Vanilla ( Es trabajar con JS sin ningu Framework )
-   - [ ] TypeScript
-   - [x] JavaScript o Vanilla
+1. Crear el proyecto y descargando la ultima versión
+```npm create vite@latest```
 
-3. Ejecutar lo sig.:
+2. Seleccionamos el Framwwork
+    - [X] Vanilla
+    - [ ] Vue
+    - [ ] React
+    - [ ] Preact
+    - [ ] Lit
+    - [ ] Svelte
+    - [ ] Solid
+    - [ ] Qwik
+    - [ ] Others
+
+3. Elegimos el tipeo de datos 
+   - [ ] TypeScript
+   - [x] JavaScript
+
+4. Navegar al directorio del proyecto creado y ejecutar:
     - cd directorio
     - npm install
     - npm run dev
 
-4. Vamos a http://localhost:5173 ( en este caso nos asigno el puerto 5173 )
+5. Vamos a http://localhost:5173 ( en este caso nos asigno el puerto 5173 )
     - Ya podemos ver la App y sus modificaciones en tiempo real
 
 ### PACKAGE.JSON

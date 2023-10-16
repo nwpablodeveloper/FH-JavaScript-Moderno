@@ -1,6 +1,6 @@
 import html from './app.html?raw'
 import todoStore, { Filters } from '../store/todo.store'
-import { renderTodo } from './usecases/render-todo';
+import { renderPendig, renderTodo } from './usecases';
 
 /**
  * 
@@ -12,29 +12,35 @@ const ElementIds = {
     newTodoInput: '#new-todo-input',
     destroy: '.destroy',
     clearComplete: '.clear-completed',
-    todoFilters: '.filtro'
+    todoFilters: '.filtro',
+    pendigCount: '#pending-count'
 }
 
 
 export const App = ( elementeId ) => {
 
-    const displayTodos = () => {
+    const displayTodos = ( filtro = Filters.All ) => {
         const todos = todoStore.getTodos( todoStore.getCurrentFilter() );
         renderTodo( ElementIds.todoList, todos );
+        updatePendigCount();
+    }
+
+    const updatePendigCount = () => {
+        renderPendig( ElementIds.pendigCount )
     }
 
         
-        ( () => {
-            
-            const app = document.createElement('div');
-            app.innerHTML = html
-            
-            document.querySelector( elementeId ).append( app );
-            
-            
-            displayTodos();
-            
-        }) ();
+    ( () => {
+        
+        const app = document.createElement('div');
+        app.innerHTML = html
+        
+        document.querySelector( elementeId ).append( app );
+        
+        
+        displayTodos();
+        
+    }) ();
         
     // Referencias HTML
 
@@ -45,7 +51,7 @@ export const App = ( elementeId ) => {
 
     clearCompleted.addEventListener( 'click',  () => {
         todoStore.deleteTodo();
-        displayTodos();
+        displayTodos( );
     });
     
     
@@ -99,7 +105,7 @@ export const App = ( elementeId ) => {
                     todoStore.setFilter( Filters.Complete )
                     break;
             }
-            
+
             displayTodos();
 
         });
