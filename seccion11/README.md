@@ -3,10 +3,11 @@
 Las variables de entorno, son variables que dependiendo del entorno o donde se este ejecutando la App van a tener un valor distingo. Por ejemplo si yo estoy trabajondo de manera local, mis variables pueden ser que apunten al LOCALHOST, pero cuando yo estoy en producción puedo cambiar a un URL especifico. 
 
 Hay varias formas de trabajar con las variables de entorno, una de las mas populares es 
-```npm insta dotenv```
+```npm install dotenv``` NO ES NECESARIO INSTALAR SI TRABAJAMOS CON VITE
 Las variables de entorno en nuestra App se guardan en un archivo llamado: ```.env```
 
 ### Donde ver las variables de entorno en VITE
+Las guardamos en un archivos .env y las llamamos con ```import.met.env```
 ```js
     console.log( import.meta.env )
 ```
@@ -77,6 +78,7 @@ const findHero = ( id ) => {
 #### Ejecución de la promesa
 ```js
 
+    // Data de relleno
     const heros = [
         {
             "id": "5d86371f25a058e5b1c8a65e",
@@ -86,7 +88,10 @@ const findHero = ( id ) => {
         },
     ]
 
+    // renderizado de la respuesta en el HTML
     const element = document.querySelector('#idElemento');
+
+    
 
     const renderHero = ( hero ) => {
         element.innerHTML = hero.name;
@@ -101,6 +106,7 @@ const findHero = ( id ) => {
 
     const id = '5d86371f25a058e5b1c8a65e'
 
+    // EJECUCIÓN DE LA PROMESA
     findHero( id )
         .then( data => findHero( data ) ) // para capturar el Resolve de la promesa
         .catch( error => renderError( error )  ) // para capturar el reject de la promesa
@@ -114,3 +120,36 @@ const findHero = ( id ) => {
         .catch( renderError )
 
 ```
+
+#### Promise Hell
+```js
+
+    // Es ejecutar una promesa dentro de otra
+    // EJEMPLO 1
+    findHero(id1)
+        .then( (  hero1  ) => {
+            
+            findHero( id2 )
+                .then( ( hero2 ) => {
+                    renderTwoHero( hero1.name, hero2.name )
+                })
+                .catch( error => renderError( error ) );
+        })
+        
+        .catch( error => renderError(error) );
+    
+    // FACTORIZACIÓN DEL EJEMPLO 1
+    
+    let hero1, hero2;
+    findHero( id1 )
+        .then( hero => {
+            hero1 = hero;
+            return findHero( id2 )
+        }).then( hero2 =>  {
+            renderTwoHero( hero1.name, hero2.name )
+        })
+        .catch( error => renderError( error ) )
+
+```
+
+### Promesis All - Solución a Promises Hell
