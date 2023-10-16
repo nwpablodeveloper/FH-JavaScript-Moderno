@@ -54,7 +54,7 @@ Las promesas es una función  que ejecutan un callback con un "resolve" y un "re
 * reject => va marcar el error si no se cumplio el resolve
 * finally => este es opcional y siempre se ejecuta.
 
-#### Declaración de la promesa
+#### [ Declaración de la promesa ]( ./advanced/src/concepts/03-promises.js )
 ```js
 
 const findHero = ( id ) => {
@@ -75,7 +75,7 @@ const findHero = ( id ) => {
 
 }
 ```
-#### Ejecución de la promesa
+#### [ Ejecución de la promesa ]( ./advanced/src/concepts/03-promises.js )
 ```js
 
     // Data de relleno
@@ -112,7 +112,7 @@ const findHero = ( id ) => {
         .catch( error => renderError( error )  ) // para capturar el reject de la promesa
 
 ```
-#### Podemos optimizar el codigo si recibimos y enviamos la mismas cantidad de parametros
+#### [ Podemos optimizar el codigo si recibimos y enviamos la mismas cantidad de parametros ]( ./advanced/src/concepts/03-promises.js )
 ```js
 
     findHero( id )
@@ -121,11 +121,30 @@ const findHero = ( id ) => {
 
 ```
 
-#### Promise Hell
+#### [ Promise Hell ]( ./advanced/src/concepts/03-promises.js )
 ```js
 
-    // Es ejecutar una promesa dentro de otra
+    // Declaración de la promesa
+    const findHero = ( id ) => {
+    
+        return new Promise( ( resolve, reject ) =>  {
+
+            const hero = heroes.find( hero => hero.id == id );
+
+            if( hero ) {
+                resolve( hero );
+                return
+            }
+
+            reject(`Hero with id ${ id } not found`)
+
+        });
+
+
+    }
+
     // EJEMPLO 1
+    // Es ejecutar una promesa dentro de otra
     findHero(id1)
         .then( (  hero1  ) => {
             
@@ -137,9 +156,9 @@ const findHero = ( id ) => {
         })
         
         .catch( error => renderError(error) );
+
     
     // FACTORIZACIÓN DEL EJEMPLO 1
-    
     let hero1, hero2;
     findHero( id1 )
         .then( hero => {
@@ -152,4 +171,14 @@ const findHero = ( id ) => {
 
 ```
 
-### Promesis All - Solución a Promises Hell
+### [ Promesis All - Solución a Promises Hell ]( ./advanced/src/concepts/03-promises.js )
+
+```js
+
+    promise.all([
+        findHero(id1),
+        findHero(id2)
+    ])
+    .then( ( [ hero1, hero2 ] ) => renderTwoHero( hero1, hero2 ))
+    .catch( renderError )
+```
