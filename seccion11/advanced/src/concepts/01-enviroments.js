@@ -14,6 +14,6 @@ export const enviromentsComponent = ( element ) => {
         URL: ${ import.meta.env.VITE_BASE_URL } </br>
     `;
 
-    element.innerHTML = html;
+    element.innerHTML = html; 
 
 }

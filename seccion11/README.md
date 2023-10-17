@@ -12,7 +12,7 @@ Las guardamos en un archivos .env y las llamamos con ```import.met.env```
     console.log( import.meta.env )
 ```
 
-### Callbacks
+### CALLBACKS
 Un Calllbacks es una función que recibe un argúmento y ese argumento es una función que ustedes invocan dentro de su función
 ```js
 
@@ -48,7 +48,7 @@ export const callbacksComponent02 = ( element ) => {
 
 ```
 
-### Promesas
+### [ PROMESAS ]( ./advanced/src/concepts/03-promises.js )
 Las promesas es una función  que ejecutan un callback con un "resolve" y un "reject" y siempre tienen un retorno
 * resolve => va a tener el valor producto de mi promesa
 * reject => va marcar el error si no se cumplio el resolve
@@ -171,7 +171,7 @@ const findHero = ( id ) => {
 
 ```
 
-### [ Promesis All - Solución a Promises Hell ]( ./advanced/src/concepts/03-promises.js )
+### [ PromIse All - Solución a Promises Hell ]( ./advanced/src/concepts/03-promises.js )
 
 ```js
 
@@ -181,4 +181,131 @@ const findHero = ( id ) => {
     ])
     .then( ( [ hero1, hero2 ] ) => renderTwoHero( hero1, hero2 ))
     .catch( renderError )
+```
+### [ Promise.race ]( ./advanced/src/concepts/03-promises.js )
+El ```promise.race([ promesa1, promesa2, ... ])``` Ejecuta un arreglo de promesas y solo devuelve el resultado de la promesa que fue mas rapido en resolverse
+
+```js
+export const promisesRaceComponent = ( element ) => {
+
+    element.innerHTML = 'Loading...';
+
+    const renderValue = ( value ) => {
+        element.innerHTML = value;
+    }
+
+    Promise.race([
+        ediumPromise(),
+        fastPromise(),
+        slowPromise(),
+        slowPromise(),
+        fastPromise(),
+        slowPromise(),
+        fastPromise(),
+        mediumPromise(),
+        mediumPromise(),
+    ])
+    .then( renderValue )
+
+}
+
+const slowPromise = () => new Promise( resolve => {
+    setTimeout(() => {
+        resolve( 'Slow Promises' )
+    }, 2000);
+})
+
+const mediumPromise = () => new Promise( resolve => {
+    setTimeout(() => {
+        resolve( 'Medium Promises' )
+    }, 1500);
+})
+
+const fastPromise = () => new Promise( resolve =>  {
+    setTimeout(() => {
+        resolve( 'Fast promise' )
+    }, 1000);
+})
+
+```
+
+### [ ASYNC ]( ./advanced/src/concepts/05-async.js )
+#### 2 Fomras de declarar funciones asincronas
+Las funciones asincronas se resuelven como una promesa sin interrumpir la fluidez del codigo
+```js
+async function () {
+
+}
+
+const miFuncion = async () => {
+
+}
+```
+### [ ASYNC/AWAIT ]( ./advanced/src/concepts/05-async-await.js )
+Las funciones Async/Await se ejecutan haciendo una pausa justo donde esta el await. Hastá que la misma no se resuelva no va a continuar con la lectura del codigo. Esto es muy usado para ir a buscar info a servidores
+```JS
+
+    const registro = async ( element )  => {
+
+        try{
+
+            const id = '5d86371fd55e2e2a30fe1ccb';
+
+            const registro = await buscarData( id );
+            
+            element.innerHTML = registro;
+
+        }catch( error ){
+            element.innerHTML = error;
+        }
+
+    }
+
+
+    const buscarData = async ( id ) => {
+
+        const info = baseDeDatos.find( registro => registro.id == id )
+
+        if( !info )
+            throw `Info con id ${ id } no existe`;
+
+        return info;
+
+    }
+
+```
+#### Ejemplo de promesas Async/Await SECUENCIALES
+Son secuenciales con una promesa necesita ser resuelta para poder continuar con la ejecución de la próxima
+```JS
+
+    const registro = async ( element )  => {
+
+        try{
+
+            const id = '5d86371fd55e2e2a30fe1ccb';
+
+            // Son secuenciales con una promesa necesita ser resuelta para poder continuar con la ejecución de la próxima
+            const registro = await buscarData( id );
+            const ventas = await buscarMasData( registro.ventas );
+            
+            element.innerHTML = registro;
+
+        }catch( error ){
+            element.innerHTML = error;
+        }
+
+    }
+
+
+    const buscarData = async ( id ) => {
+
+        const info = baseDeDatos.find( registro => registro.id == id )
+
+        if( !info )
+            throw `Info con id ${ id } no existe`;
+
+        return info;
+
+    }
+
 ```

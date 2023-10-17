@@ -6,6 +6,9 @@ import { enviromentsComponent } from './src/concepts/01-enviroments'
 import { callbacksComponente } from './src/concepts/02-callbacks'
 import { callbacksComponent02 } from './src/concepts/02-01-callbacks'
 import { promisesComponent } from './src/concepts/03-promises'
+import { promisesRaceComponent } from './src/concepts/04-promises-race'
+import { asyncComponent } from './src/concepts/05-async'
+import { asyncAwaitComponent } from './src/concepts/05-async-await'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -32,5 +35,8 @@ const element = document.querySelector('.card')
 // enviromentsComponent( element );
 // callbacksComponente( element )
 // callbacksComponent02( element )
-promisesComponent( element )
+// promisesComponent( element )
+// promisesRaceComponent( element )
+// asyncComponent( element )
+asyncAwaitComponent( element )
 
