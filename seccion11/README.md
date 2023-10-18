@@ -309,3 +309,65 @@ Son secuenciales con una promesa necesita ser resuelta para poder continuar con 
     }
 
 ```
+
+### FUNCIONES GENERADORAS video 146
+#### Ejemplo 1
+```js
+
+const acaLaFuncion = funcionGeneradora();
+
+console.log( acaLaFuncion.next() )
+console.log( acaLaFuncion.next() )
+console.log( acaLaFuncion.next() )
+console.log( acaLaFuncion.next() )
+console.log( acaLaFuncion.next() )
+console.log( acaLaFuncion.next() )
+
+function* funcionGeneradora() {
+
+    yield 'Primer resultado";
+    yield 'Segundo resultado";
+    yield 'Tercer resultado";
+    yield 'Cuarto resultado";
+    yield 'Quinto resultado";
+    yield 'Sexto resultado";
+
+    return 'No ha mas nada por aquì';
+
+}
+
+```
+
+#### Ejemplo 2
+```js
+ 
+export const generatorFunctionsComponent = ( element ) => {
+
+    const button = document.createElement('button');
+    button.innerText = 'Click Me';
+    element.append( button );
+
+    // Guardo mi función generadora
+    const contador = myFirstGeneratorFunction();
+
+    const renderButton = () => {
+        const { value } = contador.next();
+        button.innerText = `Click Me ${ value }`
+    }
+
+    button.addEventListener( 'click', renderButton )
+    
+}
+
+
+// Declaro mi funciòn generadora
+function* myFirstGeneratorFunction() {
+
+    let count = 0;
+    while( true ) {
+        yield ++count;
+    }
+
+}
+
+```
