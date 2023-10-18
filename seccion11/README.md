@@ -49,7 +49,7 @@ export const callbacksComponent02 = ( element ) => {
 ```
 
 ### [ PROMESAS ]( ./advanced/src/concepts/03-promises.js )
-Las promesas es una función  que ejecutan un callback con un "resolve" y un "reject" y siempre tienen un retorno
+Las promesas es una función  que ejecutan un callback con un 'resolve' y un 'reject' y siempre tienen un retorno
 * resolve => va a tener el valor producto de mi promesa
 * reject => va marcar el error si no se cumplio el resolve
 * finally => este es opcional y siempre se ejecuta.
@@ -81,10 +81,10 @@ const findHero = ( id ) => {
     // Data de relleno
     const heros = [
         {
-            "id": "5d86371f25a058e5b1c8a65e",
-            "about": "Laboris est duis eiusmod adipisicing cillum ut sit ea Lorem non laboris quis Lorem. Est culpa esse aliqua non labore dolor esse labore nulla mollit. Nostrud amet est quis adipisicing dolor. Labore veniam elit veniam non ad ex consequat excepteur eiusmod. Minim cupidatat velit Lorem culpa quis consequat incididunt qui amet incididunt pariatur ex aliquip aliqua. Magna ex elit in aliquip minim eu ut ut fugiat ullamco deserunt adipisicing cillum.",
-            "picture": "https://i.pinimg.com/736x/ba/9b/36/ba9b3623c9a639296e85f7ff09c3c205.jpg",
-            "name": "Captain America"
+            'id': '5d86371f25a058e5b1c8a65e',
+            'about': 'Laboris est duis eiusmod adipisicing cillum ut sit ea Lorem non laboris quis Lorem. Est culpa esse aliqua non labore dolor esse labore nulla mollit. Nostrud amet est quis adipisicing dolor. Labore veniam elit veniam non ad ex consequat excepteur eiusmod. Minim cupidatat velit Lorem culpa quis consequat incididunt qui amet incididunt pariatur ex aliquip aliqua. Magna ex elit in aliquip minim eu ut ut fugiat ullamco deserunt adipisicing cillum.',
+            'picture': 'https://i.pinimg.com/736x/ba/9b/36/ba9b3623c9a639296e85f7ff09c3c205.jpg',
+            'name': 'Captain America'
         },
     ]
 
@@ -325,12 +325,12 @@ console.log( acaLaFuncion.next() )
 
 function* funcionGeneradora() {
 
-    yield '1er resultado";
-    yield '2do resultado";
-    yield '3er resultado";
-    yield '4to resultado";
-    yield '5to resultado";
-    yield '6to resultado";
+    yield '1er resultado';
+    yield '2do resultado';
+    yield '3er resultado';
+    yield '4to resultado';
+    yield '5to resultado';
+    yield '6to resultado';
 
     return 'No ha mas nada por aquì';
 
