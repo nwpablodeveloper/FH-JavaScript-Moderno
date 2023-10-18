@@ -310,7 +310,7 @@ Son secuenciales con una promesa necesita ser resuelta para poder continuar con 
 
 ```
 
-### FUNCIONES GENERADORAS video 146
+### [ FUNCIONES GENERADORAS video 146 ]( ./advanced/src/concepts/09-function-generator.js )
 #### Ejemplo 1
 ```js
 
@@ -325,12 +325,12 @@ console.log( acaLaFuncion.next() )
 
 function* funcionGeneradora() {
 
-    yield 'Primer resultado";
-    yield 'Segundo resultado";
-    yield 'Tercer resultado";
-    yield 'Cuarto resultado";
-    yield 'Quinto resultado";
-    yield 'Sexto resultado";
+    yield '1er resultado";
+    yield '2do resultado";
+    yield '3er resultado";
+    yield '4to resultado";
+    yield '5to resultado";
+    yield '6to resultado";
 
     return 'No ha mas nada por aquì';
 
