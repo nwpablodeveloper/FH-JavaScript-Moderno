@@ -371,3 +371,5 @@ function* myFirstGeneratorFunction() {
 }
 
 ```
+
+### FUNCIONES GENERADORAS ASYNC

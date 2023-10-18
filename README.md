@@ -63,3 +63,6 @@
 
 ## [ SECCIÓN 11 Callbacks, promesas y generadores ]( ./seccion11/ )
 * Variables de entorno
+
+## [ SECCIÓN 12 Peticiones HTTP ]( ./seccion12/ )
+* FetchAPI - Peticion http get
