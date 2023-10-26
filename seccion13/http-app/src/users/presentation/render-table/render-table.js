@@ -6,19 +6,19 @@ let table;
 const createTable = () => {
 
     const table = document.createElement('table');
+
+
     const tableHeaders = document.createElement('thead');
-
     tableHeaders.innerHTML = `
-        <tr>
-            <td>id</td>
-            <th>balance</th>
-            <th>firstName</th>
-            <th>lastName</th>
-            <th>Active</th>
-            <th>Actions</th>
-        </tr>
-    `
-
+                            <tr>
+                                <td>id</td>
+                                <th>balance</th>
+                                <th>firstName</th>
+                                <th>lastName</th>
+                                <th>Active</th>
+                                <th>Actions</th>
+                            </tr>
+                        `;
     const tableBody = document.createElement('tbody');
 
     table.append( tableHeaders, tableBody );

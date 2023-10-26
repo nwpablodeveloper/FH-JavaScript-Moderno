@@ -12,7 +12,7 @@ const loadNextPage = async () => {
     try {        
         users = await loadUsersByPage( state.currentPage + 1  );
     } catch (error) {
-        throw new Error('Concta la DB')
+        throw new Error('Error al cargar usuarios la DB')
     }
     
     if ( users.length === 0) return ;

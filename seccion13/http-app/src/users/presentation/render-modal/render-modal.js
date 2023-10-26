@@ -38,15 +38,25 @@ export const RenderModal = ( element ) => {
     })
 
     form.addEventListener('submit', ( event ) => {
-        event.preventDefault();  // Evita el posteo del formulario
+        
+        // Evita el clasico envio de formulario que refresca la web 
+        event.preventDefault();  // prevenir el comportamiento por defecto
 
         const formData = new FormData( form );
+
+        // for( const data of formData ) {
+        //     console.log(data)
+        // }
+
         const userLike = {};
 
         for( const [ key, value ] of formData ) {
             if( key === 'balance') {
                 userLike[key] = +value;
+                continue;
             }
+
+            userLike[key] = value;
         }
 
         console.log(userLike)

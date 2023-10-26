@@ -21,7 +21,6 @@ export const localhostUserToModel = ( localhostUser ) => {
     } = localhostUser;
 
 
-
     return new User ({
         avatar,
         balance,
